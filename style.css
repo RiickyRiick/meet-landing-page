@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900&display=swap');
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 18px;
+    min-height: 100vh;
+}
+
+.main-container {
+    margin: 0 0 0 0;
+}
+
+
+.logo-container {
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.card-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*Top Section*/
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.groupchat-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 23px 32px;
+    text-align: center;
+    width: 448px;
+}
+
+h1.slogan {
+    color: hsl(214, 92%, 13%);
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.pro-desc {
+    color: hsl(17, 3%, 52%);
+    padding: 25px 0;
+    font-weight: 500;
+}
+
+
+.primary-btn {
+    background-color: hsl(206, 33%, 57%);
+    color: hsl(0, 0%, 98%);
+    font-weight: 900;
+    margin-right: 10px;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.4s ease, color 0.4s ease, 
+    box-shadow 0.4s ease;
+}
+
+.v-one {
+    color: hsl(206, 34%, 84%);
+    font-weight: 900;
+    transition: color 0.4s ease;
+    ;
+}
+
+.secondary-btn {
+    background-color: hsl(206, 66%, 42%);
+    color: hsl(0, 0%, 98%);
+    font-weight: 900;
+    padding: 20px 40px;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 0.4s ease, color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.primary-btn:hover {
+    background-color: hsl(206, 52%, 78%);
+    color: hsl(214, 92%, 13%);
+    cursor: pointer;
+    box-shadow: 1px 3px 1px rgb(88, 112, 221);
+}
+
+.primary-btn:hover .v-one {
+    color: hsl(0, 0%, 100%);
+}
+
+.secondary-btn:hover {
+    background-color: hsl(238, 30%, 82%);
+    color: hsl(214, 92%, 13%);
+    cursor: pointer;
+    box-shadow: 1px 3px 1px rgb(88, 112, 221);
+}
+
+/*End of Top Section*/
+
+
+/* Container wraps circle and line */
+
+.circle-line-container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: hsl(0, 18%, 84%);
+    border: 1px solid hsl(206, 33%, 57%);
+    border-radius: 50%;
+}
+
+
+.line {
+    width: 1px;
+    height: 100px;
+    margin-top: 100px;
+    background-color: #ceddec;
+}
+
+.circle-content {
+    color: hsl(206, 33%, 57%);
+    font-weight: 700;
+}
+
+/*Middle Section*/
+.middle-section {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.images-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 1em;
+}
+
+.images-gallery img {
+    width: 19%;
+    border-radius: 8px;
+}
+
+.text-content {
+    margin-top: 50px;
+    width: 450px;
+    margin: 50px auto;
+}
+
+.section-subtitle {
+    color: hsl(17, 3%, 52%);
+    ;
+    text-transform: uppercase;
+    font-size: 110%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+.section-title {
+    font-size: 45px;
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+.section-description {
+    color: hsl(17, 3%, 52%);
+    line-height: 1.6;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+/*End of Section*/
+
+
+.circle-line-container2 {
+    display: flex;
+    flex-direction: column-reverse;
+    /* stack vertically */
+    align-items: center;
+    /* center horizontally */
+    margin-top: 0px;
+    /* for spacing */
+    position: relative;
+    top: 20px;
+    z-index: 4;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 57px;
+    height: 57px;
+    background-color: hsl(0, 100%, 99%);
+    border: 1px solid hsl(206, 33%, 57%);
+    border-radius: 50%;
+    /* makes it a circle */
+}
+
+/* The vertical line attached to the circle, going upward */
+.line {
+    width: 1px;
+    /* line thickness */
+    height: 150px;
+    /* length of the line */
+    margin-top: 100px;
+    background-color: hsl(206, 33%, 57%);
+    margin-bottom:
+        /* hide the gap between circle and line, attach properly */
+}
+
+.circle-content {
+    color: hsl(206, 33%, 57%);
+    font-weight: 700;
+}
+
+/*Bottom Section*/
+
+.bottom-section {
+    background-image: url(./assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 130px 20px;
+    display: flex;
+    justify-content: space-around;
+    color: hsl(0, 0%, 98%);
+    position: relative;
+}
+
+.bottom-section::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: hsla(206, 30%, 51%, 0.8);
+    z-index: 2;
+}
+
+.bottom-heading,
+.bottom-desc,
+.bottom-btn {
+    z-index: 3;
+}
+
+.bottom-heading {
+    font-size: 27px;
+    font-weight: 700;
+
+}
+
+.bottom-desc {
+    width: 480px;
+    font-weight: 600;
+}
+
+.bottom-btn {
+    background-color: hsl(206, 66%, 42%);
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    border: none;
+    border-radius: 35px;
+    padding: 20px 40px;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.bottom-btn:hover {
+    background-color: hsl(206, 52%, 78%);
+    color: hsl(214, 92%, 13%);
+    cursor: pointer;
+}
+
+.v-two {
+    transition: color 0.4s ease;
+}
+
+.bottom-btn:hover .v-two {
+    color: hsl(0, 0%, 100%);
+}
+
+
+
+@media only screen and (max-width: 1315px) {
+
+    
+    .hero-container {
+        flex-wrap: wrap;
+    }
+
+    .groupchat-info {
+        width: 450px;
+        order: 1;
+    }
+
+    .images-gallery {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .images-gallery img {
+        width: 100%;
+    }
+
+    .bottom-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+    }
+
+    .bottom-heading {
+        width: 450px;
+        padding-bottom: 20px;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .bottom-desc {
+        text-align: center;
+        padding: 30px 0;
+        width: 70%;
+        font-weight: 300;
+    }
+
+    .bottom-btn {
+        padding: 15px 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .hero-container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .hero-container img {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .buttons-group {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .secondary-btn {
+        margin-top: 8px;
+    }
+
+    .middle-section {
+    }
+
+    .images-gallery {
+        width: 70%;
+    }
+
+    h1.slogan {
+        font-size: 50px;
+    }
+
+    .section-subtitle {
+        font-size: 14px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 590px) {
+
+
+
+    .pro-desc {
+        width: 90%;
+    }
+
+    .text-content {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 490px) {
+
+
+    .groupchat-info {
+        width: 100%;
+    }
+    
+    .hero-container {
+
+        margin: 0 0 0 75px;
+        width: 60%;
+    }
+
+    .text-content {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .hero-container {
+        margin: 0 0 0 50px;
+    }
+}
